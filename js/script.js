@@ -302,4 +302,4 @@ $('#slider-parallax').stellar();
   });
  
 });
-	
+
