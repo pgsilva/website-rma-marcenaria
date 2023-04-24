@@ -28,12 +28,12 @@ function sendMessage() {
     }
 
     if (valid) {
-        console.log("Mensgem validada sera enviada");
+        console.log("Mensagem validada sera enviada");
         text = "Olá RMA Marcenaria! \n" +
-            "*" + nome + "*\n" +
-            "*" + assunto + "*\n" +
-            "*" + celular + "*\n" +
-            mensagem
+            "*" + nome.trim() + "*\n" +
+            "*" + assunto.trim() + "*\n" +
+            "*" + celular.trim() + "*\n" +
+            mensagem.trim()
         sendWhatsappMessage(celular, text);
     }
 }
